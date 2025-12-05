@@ -1,0 +1,185 @@
+/* ===========================
+   NAVBAR - CONTENEUR PRINCIPAL
+=========================== */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #4f8dba, #1c2cc1);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* ===========================
+   LOGO
+=========================== */
+.navbar-logo h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #2d06b0, #4c59bc, #f4f4f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.navbar-logo h1:hover {
+  transform: scale(1.05);
+}
+
+/* ===========================
+   BARRE DE RECHERCHE
+=========================== */
+.navbar-search {
+  flex: 1;
+  display: flex;
+  max-width: 400px;
+  margin: 0 2rem;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.navbar-search input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  background-color: #f0f4f8;
+  color: #1b263b;
+}
+
+.navbar-search input::placeholder {
+  color: #6c7a89;
+}
+
+.navbar-search button {
+  padding: 0 1rem;
+  background: linear-gradient(135deg, #0A3D62, #1B1464);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.navbar-search button:hover {
+  background: linear-gradient(135deg, #1B1464, #0A3D62);
+  transform: scale(1.05);
+}
+
+/* ===========================
+   LIENS DE NAVIGATION
+=========================== */
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  margin-left: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.navbar-links a:hover {
+  background-color: #1b263b;
+  color: #3a2ed9;
+  transform: scale(1.05);
+}
+
+/* ===========================
+   BOUTON DE DÉCONNEXION
+=========================== */
+.logout-btn {
+  margin-left: 1.5rem;
+  color: #e00808;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s;
+  background-color: rgba(221, 26, 26, 0.05);
+}
+
+.logout-btn:hover {
+  background-color: rgba(221, 26, 26, 0.2);
+  transform: scale(1.05);
+}
+
+/* ===========================
+   SELECT DES CATÉGORIES
+=========================== */
+.category-dropdown {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.category-dropdown label {
+  font-weight: 600;
+  color: #fff;
+}
+
+.category-dropdown select {
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  background-color: #f0f4f8;
+  color: #1b263b;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: all 0.3s;
+}
+
+.category-dropdown select:hover {
+  background-color: #e0e7f2;
+  transform: scale(1.03);
+}
+
+.category-dropdown select:focus {
+  border: 2px solid #3a2ed9;
+  background-color: #f0f4f8;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+  }
+
+  .navbar-search {
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar-links a, .category-dropdown {
+    margin: 0.5rem;
+  }
+}

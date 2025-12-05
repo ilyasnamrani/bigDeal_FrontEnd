@@ -1,0 +1,321 @@
+.message-form-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0f1c 0%, #0f172a 50%, #1e293b 100%);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.message-form-card {
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 25px;
+  width: 100%;
+  max-width: 500px; /* Réduit de 600px à 500px */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.form-header {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-title {
+  font-size: 1.5rem; /* Réduit de 2rem */
+  font-weight: 700;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 12px 0;
+}
+
+.annonce-preview {
+  background: rgba(30, 41, 59, 0.6);
+  padding: 12px;
+  border-radius: 6px;
+  border-left: 3px solid #3b82f6;
+}
+
+.annonce-price {
+  color: #60a5fa;
+  font-size: 1.1rem; /* Réduit */
+  font-weight: 600;
+  margin: 0 0 6px 0;
+}
+
+.annonce-description {
+  color: #cbd5e1;
+  margin: 0;
+  font-size: 0.85rem; /* Réduit */
+  line-height: 1.3;
+}
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Réduit de 25px */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  color: #f1f5f9;
+  font-weight: 600;
+  margin-bottom: 6px; /* Réduit */
+  font-size: 0.9rem; /* Réduit */
+}
+
+.message-textarea {
+  padding: 12px; /* Réduit de 15px */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px; /* Réduit de 12px */
+  background: rgba(30, 41, 59, 0.6);
+  color: #f1f5f9;
+  font-size: 0.95rem; /* Réduit */
+  resize: vertical;
+  min-height: 100px; /* Réduit de 120px */
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.message-textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.char-counter {
+  color: #94a3b8;
+  font-size: 0.75rem; /* Réduit */
+  text-align: right;
+  margin-top: 4px; /* Réduit */
+}
+
+.file-upload-area {
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 10px; /* Réduit */
+  padding: 15px; /* Réduit de 20px */
+  text-align: center;
+  transition: all 0.3s ease;
+  background: rgba(30, 41, 59, 0.3);
+}
+
+.file-upload-area:hover {
+  border-color: #3b82f6;
+  background: rgba(30, 41, 59, 0.5);
+}
+
+.file-input {
+  display: none;
+}
+
+.file-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px; /* Réduit de 10px */
+  cursor: pointer;
+  color: #cbd5e1;
+  transition: all 0.3s ease;
+}
+
+.file-label:hover {
+  color: #60a5fa;
+}
+
+.file-icon {
+  font-size: 1.5rem; /* Réduit de 2rem */
+}
+
+.file-text {
+  font-weight: 500;
+  font-size: 0.9rem; /* Réduit */
+}
+
+.file-hint {
+  color: #94a3b8;
+  font-size: 0.75rem; /* Réduit */
+  margin-top: 6px; /* Réduit */
+  display: block;
+}
+
+.image-preview-container {
+  margin-top: 12px; /* Réduit */
+}
+
+.image-preview {
+  position: relative;
+  display: inline-block;
+}
+
+.image-preview img {
+  width: 120px; /* Réduit de 150px */
+  height: 120px; /* Réduit de 150px */
+  object-fit: cover;
+  border-radius: 6px; /* Réduit */
+  border: 2px solid rgba(59, 130, 246, 0.3);
+}
+
+.remove-image-btn {
+  position: absolute;
+  top: -6px; /* Réduit */
+  right: -6px; /* Réduit */
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px; /* Réduit */
+  height: 24px; /* Réduit */
+  cursor: pointer;
+  font-size: 14px; /* Réduit */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.remove-image-btn:hover {
+  background: #dc2626;
+  transform: scale(1.1);
+}
+
+.form-input {
+  padding: 10px 12px; /* Réduit */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(30, 41, 59, 0.6);
+  color: #f1f5f9;
+  font-size: 0.95rem; /* Réduit */
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.field-hint {
+  color: #94a3b8;
+  font-size: 0.75rem; /* Réduit */
+  margin-top: 4px; /* Réduit */
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px; /* Réduit */
+  justify-content: flex-end;
+  margin-top: 8px; /* Réduit */
+}
+
+.cancel-btn {
+  background: rgba(30, 41, 59, 0.6);
+  color: #cbd5e1;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 10px 20px; /* Réduit */
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem; /* Réduit */
+}
+
+.cancel-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 25px; /* Réduit */
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px; /* Réduit */
+  font-size: 0.9rem; /* Réduit */
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.4); /* Réduit */
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.loading-spinner {
+  width: 14px; /* Réduit */
+  height: 14px; /* Réduit */
+  border: 2px solid transparent;
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .message-form-container {
+    padding: 15px 10px; /* Réduit */
+  }
+  
+  .message-form-card {
+    padding: 20px 15px; /* Réduit */
+    max-width: 100%;
+  }
+  
+  .form-title {
+    font-size: 1.3rem; /* Réduit */
+  }
+  
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+  
+  .cancel-btn,
+  .submit-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Version encore plus compacte pour mobile */
+@media (max-width: 480px) {
+  .message-form-card {
+    padding: 18px 12px; /* Encore plus réduit */
+    border-radius: 12px; /* Réduit */
+  }
+  
+  .form-title {
+    font-size: 1.2rem; /* Réduit */
+  }
+  
+  .message-textarea {
+    min-height: 80px; /* Réduit */
+    padding: 10px; /* Réduit */
+  }
+  
+  .file-upload-area {
+    padding: 12px; /* Réduit */
+  }
+}

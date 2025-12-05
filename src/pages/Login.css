@@ -1,0 +1,93 @@
+/* Container général */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e0f7fa, #d0ebff);
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Carte */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: #0d1b2a;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: fadeIn 1s ease-out;
+}
+
+/* Titre */
+.login-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #0A3D62, #8a83cf, #3282B8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* Message */
+.message {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffd166;
+  font-weight: 500;
+}
+
+/* Inputs */
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.login-card input:focus {
+  box-shadow: 0 0 0 3px rgba(52, 130, 184, 0.4);
+  transform: scale(1.02);
+}
+
+/* Erreurs */
+.error {
+  color: #ff6b6b;
+  font-size: 12px;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+/* Bouton */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #0A3D62, #1B1464);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

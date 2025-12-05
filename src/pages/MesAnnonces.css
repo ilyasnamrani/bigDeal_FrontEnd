@@ -1,0 +1,95 @@
+.annonces-container {
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #d0ebff);
+  min-height: 100vh;
+}
+
+
+.annonce-btn {
+  margin-top: auto; /* pousse le bouton en bas */
+  padding: 10px;
+  background: linear-gradient(90deg, #1B1464, #3282B8);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.annonce-btn:hover {
+  background: linear-gradient(90deg, #0A3D62, #1B1464);
+  transform: scale(1.02);
+}
+
+.annonces-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* réduit la taille minimale pour carte plus petite */
+  gap: 20px;
+}
+
+.annonce-card {
+  background-color: #011830;
+  color: #fff;
+  padding: 0.3rem; /* réduit de 20% (avant 1rem) */
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.annonce-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+.annonce-image {
+  width: 16%; /* réduit de ~20% (avant 20%) */
+  height: 144px; /* réduit de 20% (avant 180px) */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.annonce-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  scroll-snap-type: x mandatory;
+  margin-bottom: 0.5rem;
+}
+
+.annonce-slider img {
+  flex: 0 0 auto;
+  width: 200px; /* réduit de ~20% (avant 250px) */
+  height: 160px; /* réduit de 20% (avant 200px) */
+  object-fit: cover;
+  border-radius: 8px;
+  scroll-snap-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.annonce-titre {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.annonce-desc {
+  font-size: 0.95rem;
+  color: #d1d8e0;
+  margin-bottom: 0.5rem;
+}
+
+.annonce-prix {
+  font-weight: 700;
+  color: #0fcb51;
+  margin-bottom: 0.5rem;
+}
+
+.annonce-info {
+  font-size: 0.85rem;
+  color: #a5b1c2;
+}
